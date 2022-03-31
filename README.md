@@ -123,17 +123,14 @@
 </details>
 
 ### 所有节点
-合并节点总数: `4735`
+合并节点总数: `241`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree](https://hi.moon365.workers.dev/proxies), 节点数量: `69`
-- [ronghuaxueleng/get_v2/changfengoss](https://github.com/ronghuaxueleng/get_v2), 节点数量: `1734`
-- [openit/long](https://github.com/git-yusteven/openit), 节点数量: `5`
-- [426永久节点](https://zua426.cf), 节点数量: `35`
-- [yunbaitechnodes](https://dingyue-3843.onrender.com), 节点数量: `16`
-- [dingyue](https://gitlab.com), 节点数量: `108`
-- [JehuWan/TopFreeProxies](https://github.com/JehuWan/TopFreeProxies/sub), 节点数量: `2768`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `103`
+- [ronghuaxueleng/cfmen](https://github.com/ronghuaxueleng/get_v2), 节点数量: `15`
+- [TopFreeProxies/Eternity](https://github.com/alanbobs999/TopFreeProxies), 节点数量: `54`
+- [ThekingMX1998/free-v2ray-code](https://github.com/ThekingMX1998/free-v2ray-code), 节点数量: `69`
 
 ## 客户端选择
 ### 主流桌面客户端
