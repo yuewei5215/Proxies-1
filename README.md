@@ -1,10 +1,10 @@
-# 修改自alanbobs999/TopFreeProxies
+# 修改自JehuWan/TopFreeProxies
 # TopFreeProxies
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alanbobs999/topfreeproxies/sub_merge?label=sub_merge)](https://github.com/alanbobs999/TopFreeProxies/actions/workflows/sub_merge.yml) 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JehuWan/proxies/sub_merge?label=sub_merge)](https://github.com/JehuWan/Proxies/actions/workflows/sub_merge.yml) 
 
-![Watchers](https://img.shields.io/github/watchers/alanbobs999/topfreeproxies) ![Stars](https://img.shields.io/github/stars/alanbobs999/topfreeproxies) ![Forks](https://img.shields.io/github/forks/alanbobs999/topfreeproxies) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=alanbobs999.topfreeproxies)
+![Watchers](https://img.shields.io/github/watchers/JehuWan/proxies) ![Stars](https://img.shields.io/github/stars/JehuWan/proxies) ![Forks](https://img.shields.io/github/forks/JehuWan/proxies) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=JehuWan.proxies)
 
-[仓库介绍](https://github.com/alanbobs999/TopFreeProxies#仓库介绍) | [使用方法](https://github.com/alanbobs999/TopFreeProxies#使用方法) | [节点信息](https://github.com/alanbobs999/TopFreeProxies#节点信息) | [软件推荐](https://github.com/alanbobs999/TopFreeProxies#客户端选择) | [机场推荐](https://github.com/alanbobs999/TopFreeProxies#机场推荐) | [仓库声明](https://github.com/alanbobs999/TopFreeProxies#仓库声明)
+[仓库介绍](https://github.com/JehuWan/TopFreeProxies#仓库介绍) | [使用方法](https://github.com/JehuWan/TopFreeProxies#使用方法) | [节点信息](https://github.com/JehuWan/TopFreeProxies#节点信息) | [软件推荐](https://github.com/JehuWan/TopFreeProxies#客户端选择) | [仓库声明](https://github.com/JehuWan/TopFreeProxies#仓库声明)
 
 ## 仓库介绍
 对网络上各免费节点池及博主分享的节点进行测速筛选出较为稳定高速的节点，再导入到仓库中进行分享记录。所筛选的节点链接在仓库`./sub/sub_list.json`文件中，其中大部分为其他`GitHub`仓库链接，如果大家有好的订阅链接欢迎提交 PR ，这些链接包含的所有节点合并在仓库`./sub/sub_merge.txt`中。
@@ -16,13 +16,13 @@
 ## 使用方法
 将以下订阅链接导入相应客户端即可。链接中大部分为 SS 协议节点，少量 Vmess, Trojan ,SSR 协议节点，建议选择协议支持完整的客户端。
 
-- [多协议Base64编码](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity)
-- [Clash](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml)
+- [多协议Base64编码](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/Eternity)
+- [Clash](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/Eternity.yml)
 
 另有国内加速链接：
 
-- [多协议Base64编码](https://raw.fastgit.org/alanbobs999/TopFreeProxies/master/Eternity)
-- [Clash](https://raw.fastgit.org/alanbobs999/TopFreeProxies/master/Eternity.yml)
+- [多协议Base64编码](https://raw.fastgit.org/JehuWan/TopFreeProxies/master/Eternity)
+- [Clash](https://raw.fastgit.org/JehuWan/TopFreeProxies/master/Eternity.yml)
 
 >`Clash`链接所使用的配置在仓库`./update/provider/`中，有相应配置文件和以国家分类的`proxy-provider`。
 >
@@ -124,7 +124,7 @@
 
 ### 所有节点
 合并节点总数: `4735`
-[节点链接](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge.txt)
+[节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
 - [MoonFree](https://hi.moon365.workers.dev/proxies), 节点数量: `69`
@@ -133,7 +133,7 @@
 - [426永久节点](https://zua426.cf), 节点数量: `35`
 - [yunbaitechnodes](https://dingyue-3843.onrender.com), 节点数量: `16`
 - [dingyue](https://gitlab.com), 节点数量: `108`
-- [alanbobs999/TopFreeProxies](https://github.com/alanbobs999/TopFreeProxies/sub), 节点数量: `2768`
+- [JehuWan/TopFreeProxies](https://github.com/JehuWan/TopFreeProxies/sub), 节点数量: `2768`
 
 ## 客户端选择
 ### 主流桌面客户端
@@ -163,20 +163,9 @@
 |                              ×                               | [ShadowsocksR-android](https://github.com/HMBSbige/ShadowsocksR-Android/releases) | SSR协议支持，安卓专用 SSR 客户端。                                                |
 |                              ×                               |     [V2rayNG](https://github.com/2dust/v2rayNG/releases)     | SS, Trojan, Vmess, VLESS协议支持，v2ray 内核。                           |
 
-## 机场推荐
-免费节点失效太快，推荐一些性价比高的机场应急使用。
-- [魔戒.net](https://www.mojie.cyou/#/register?code=sAbl0qtT)
-  - 按量计费机场，1元10G，10元130G
-  - 所有套餐均是一样的节点与一样的服务，所有套餐流量永不过期，用完为止，不限制客户端数量，最高可提供 2Gbps 峰值。
-- [大迅云](https://daxun.club/#/register?code=JPmAFPav)
-  - 最低月付 5元50G，购买 12 元及以上套餐免费领取奈飞 + 迪士尼 Plus 共享号
-  - 原生IP负载均衡，流媒体解锁晚高峰油管秒开，主打性价比，有试用
-- [PeaceCloud](https://peachcloud.cc/#/register?code=sVwFqpTT)
-  - 最低月付 3元30G中转流量，6元100G
-  - 全线广州移动中转，另有 0.1 倍率直连线路 Azure/AWS，不解锁流媒体
 
 ## 仓库声明
 订阅节点仅作学习交流使用，只是对网络上节点的优选排序，用于查找资料，学习知识，不做任何违法行为。所有资源均来自互联网，仅供大家交流学习使用，出现违法问题概不负责。
 
 ## 星标统计
-[![Stargazers over time](https://starchart.cc/alanbobs999/TopFreeProxies.svg)](https://starchart.cc/alanbobs999/TopFreeProxies)
+[![Stargazers over time](https://starchart.cc/JehuWan/Proxies.svg)](https://starchart.cc/JehuWan/Proxies)
