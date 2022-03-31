@@ -1,4 +1,4 @@
-# 修改自JehuWan/TopFreeProxies
+# 修改自alanbobs999/TopFreeProxies
 # TopFreeProxies
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JehuWan/proxies/sub_merge?label=sub_merge)](https://github.com/JehuWan/Proxies/actions/workflows/sub_merge.yml) 
 
