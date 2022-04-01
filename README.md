@@ -123,18 +123,18 @@
 </details>
 
 ### 所有节点
-合并节点总数: `5670`
+合并节点总数: `847`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `89`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `93`
 - [ronghuaxueleng/cfmen](https://github.com/ronghuaxueleng/get_v2), 节点数量: `15`
 - [TopFreeProxies/Eternity](https://github.com/alanbobs999/TopFreeProxies), 节点数量: `100`
 - [ThekingMX1998/free-v2ray-code](https://github.com/ThekingMX1998/free-v2ray-code), 节点数量: `43`
-- [TG节点池(https://t.me/Jsnzk/4664)](https://pool.jinxnet.xyz), 节点数量: `259`
-- [【碧海】节点池](https://proxies.bihai.cf/clash), 节点数量: `2969`
-- [【426】节点池](https://zua426.cf/clash), 节点数量: `2150`
-- [【EdNovas】节点池](https://ednovas.design/clash), 节点数量: `45`
+- [TG节点池(https://t.me/Jsnzk/4664)](https://pool.jinxnet.xyz), 节点数量: `51`
+- [【碧海】节点池](https://proxies.bihai.cf/clash), 节点数量: `317`
+- [【426】节点池](https://zua426.cf/clash), 节点数量: `201`
+- [【EdNovas】节点池](https://ednovas.design/clash), 节点数量: `27`
 
 ## 客户端选择
 ### 主流桌面客户端
