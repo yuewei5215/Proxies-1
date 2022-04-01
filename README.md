@@ -123,11 +123,11 @@
 </details>
 
 ### 所有节点
-合并节点总数: `1092`
+合并节点总数: `1038`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `84`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `30`
 - [ronghuaxueleng/cfmen](https://github.com/ronghuaxueleng/get_v2), 节点数量: `15`
 - [learnhard-cn/free_proxy_ss](https://raw.githubusercontent.com/learnhard-cn), 节点数量: `136`
 - [anaer/Sub](https://raw.githubusercontent.com/anaer), 节点数量: `108`
