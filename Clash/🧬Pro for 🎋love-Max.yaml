@@ -1,0 +1,854 @@
+port: 7890
+socks-port: 7891
+tproxy-port: 7893
+redir-port: 3333
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: debug
+external-controller: 127.0.0.1:9090
+secret: ""
+external-ui: "./dashboard"
+hosts:
+  'router.asus.com': 192.168.50.1
+  '*.clash.dev': 127.0.0.1
+  '.dev': 127.0.0.1
+  'alpha.clash.dev': '::1'
+  'mtalk.google.com': 108.177.125.188
+  'dl.google.com': 180.163.151.161
+  'dl.l.google.com': 180.163.151.161
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
+    - "stun.*.*.*"
+    - "stun.*.*"
+    - miwifi.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - netis.cc
+    - router.asus.com
+    - repeater.asus.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - tplinkrepeater.net
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 114.114.114.114
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+  - 8.8.8.8   # Google DNS over TCP
+  - 1.1.1.1   # cloudflare DNS over TCP
+  - tls://8.8.8.8:853   # Google DNS over TLS
+  - tls://1.1.1.1:853   # cloudflare DNS over TLS
+  - https://dns.google/dns-query   # Google DNS over HTTPS
+  - https://cloudflare-dns.com/dns-query   # cloudflare DNS over HTTPS
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+tun:
+  enable: true
+  stack: system 
+  dns-hijack:
+    - 198.18.0.2:53
+    - tcp://198.18.0.2:53
+    - tcp://8.8.8.8:53
+    - tcp://8.8.4.4:53
+  auto-route: true 
+  auto-detect-interface: true 
+proxy-providers:
+  AirPort:
+    type: http
+    path: ./Proxy-Provider-Max/AirPort.yaml
+    url: https://gitlab.com/api/v4/projects/33820890/repository/files/Clash%2FAirPort.yaml/raw?ref=main&private_token=glpat-G54_jEXz6TYwUZzyBezs
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  HK-🇭🇰:
+    type: http
+    path: ./Proxy-Provider-Max/HK-🇭🇰.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+    filter: (HK|🇭🇰)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  TW-🇹🇼:
+    type: http
+    path: ./Proxy-Provider-Max/TW-🇹🇼.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+    filter: (TW|🇹🇼)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  KR-🇰🇷:
+    type: http
+    path: ./Proxy-Provider-Max/KR-🇰🇷.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+    filter: (KR|🇰🇷)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  SG-🇸🇬:
+    type: http
+    path: ./Proxy-Provider-Max/SG-🇸🇬.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+    filter: (SG|🇸🇬)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  JP-🇯🇵:
+    type: http
+    path: ./Proxy-Provider-Max/JP-🇯🇵.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+    filter: (JP|🇯🇵)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  HTTPS-SCP:
+    type: http
+    path: ./Proxy-Provider-Max/HTTPS-SCP.yaml
+    url: https://api.v1.mk/sub?target=clash&url=http%3A%2F%2Fopenit.ml%2FClash.yaml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&rename=%60%5BA-Za-z%5D%7B1%2C%7D%7C%5C%7C%EF%BC%A0%60&exclude=%E5%AE%89%E5%85%A8%7C%E6%95%B4%E7%90%86&append_type=true&emoji=true&list=true&udp=true&tfo=false&expand=true&scv=true&fdn=true&sort=true&surge.doh=true&clash.doh=true&new_name=true
+#    filter: ()
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  Asia:
+    type: http
+    path: ./Proxy-Provider-Max/Asia.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+#    filter: (HK+🇭🇰+TW+🇹🇼+KR+🇰🇷+JP+🇯🇵+SG+🇸🇬+CN+🇨🇳+IN+🇮🇳+ID+🇮🇩+🇹🇭+TH+RU+🇷🇺+🇻🇳+VN)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  America:
+    type: http
+    path: ./Proxy-Provider-Max/America.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=US%2B%F0%9F%87%BA%F0%9F%87%B8%2BCA%2B%F0%9F%87%A8%F0%9F%87%A6&udp=1&emoji=1&sort=0&aead=0&inline=1
+#    filter: (US+🇺🇸+CA+🇨🇦)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  Europe:
+    type: http
+    path: ./Proxy-Provider-Max/Europe.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=%F0%9F%87%A6%F0%9F%87%B6%2BAQ%2BGB%2B%F0%9F%87%AC%F0%9F%87%A7%2BDE%2B%F0%9F%87%A9%F0%9F%87%AA%2BFR%2B%F0%9F%87%AB%F0%9F%87%B7%2BEE%2B%F0%9F%87%AA%F0%9F%87%AA%2BNL%2B%F0%9F%87%B3%F0%9F%87%B1%2B%F0%9F%87%B7%F0%9F%87%B4%2BRO%2B%F0%9F%87%AB%F0%9F%87%AE%2BFI%2B%F0%9F%87%AE%F0%9F%87%AA%2BIE%2BIT%2B%F0%9F%87%AE%F0%9F%87%B9&udp=1&emoji=1&sort=0&aead=0&inline=1
+#    filter: (🇦🇶+AQ+GB+🇬🇧+DE+🇩🇪+FR+🇫🇷+EE+🇪🇪+NL+🇳🇱+🇷🇴+RO+🇫🇮+FI+🇮🇪+IE+IT+🇮🇹)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+  Others:
+    type: http
+    path: ./Proxy-Provider-Max/Others.yaml
+    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&out=%F0%9F%87%A6%F0%9F%87%B6%2BAQ%2BGB%2B%F0%9F%87%AC%F0%9F%87%A7%2BDE%2B%F0%9F%87%A9%F0%9F%87%AA%2BFR%2B%F0%9F%87%AB%F0%9F%87%B7%2BEE%2B%F0%9F%87%AA%F0%9F%87%AA%2BNL%2B%F0%9F%87%B3%F0%9F%87%B1%2B%F0%9F%87%B7%F0%9F%87%B4%2BRO%2B%F0%9F%87%AB%F0%9F%87%AE%2BFI%2B%F0%9F%87%AE%F0%9F%87%AA%2BIE%2BIT%2B%F0%9F%87%AE%F0%9F%87%B9%2BUS%2B%F0%9F%87%BA%F0%9F%87%B8%2BCA%2B%F0%9F%87%A8%F0%9F%87%A6%2BHK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
+#    filter: !(🇦🇶+AQ+GB+🇬🇧+DE+🇩🇪+FR+🇫🇷+EE+🇪🇪+NL+🇳🇱+🇷🇴+RO+🇫🇮+FI+🇮🇪+IE+IT+🇮🇹+US+🇺🇸+CA+🇨🇦+HK+🇭🇰+TW+🇹🇼+KR+🇰🇷+JP+🇯🇵+SG+🇸🇬+CN+🇨🇳+IN+🇮🇳+ID+🇮🇩+🇹🇭+TH+RU+🇷🇺+🇻🇳+VN)
+    interval: 3600
+    health-check:
+        enable: true
+        url: http://cp.cloudflare.com/
+        interval: 300
+proxy-groups:
+  - name: 🚀 Handover Access
+    type: select
+    proxies:
+      - 🏹 Native
+      - 🎭 Cluster
+      - 🛰️ AirPort S
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🛰️ AirPort U
+      - URL HK
+      - URL TW
+      - URL KR
+      - URL JP
+      - URL SG
+      - URL America
+      - URL Europe
+      - URL Others
+      - HTTP U
+      - ❌ REJECT
+  - name: 🛰️ AirPort S
+    type: select
+    use:
+      - AirPort
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT HK
+    type: select
+    use:
+      - HK-🇭🇰
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT TW
+    type: select
+    use: 
+      - TW-🇹🇼
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT KR
+    type: select
+    use: 
+      - KR-🇰🇷
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT JP
+    type: select
+    use: 
+      - JP-🇯🇵
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT SG
+    type: select
+    use: 
+      - SG-🇸🇬
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT America
+    type: select
+    use: 
+      - America
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT Europe
+    type: select
+    use: 
+      - Europe
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: SELECT Others
+    type: select
+    use: 
+      - Others
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: HTTP S
+    type: select
+    use:
+      - HTTPS-SCP
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: 🎋 T 🎊 G 🎐 M 🍎 A
+    type: select
+    proxies:
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - 🏹 Native
+      - ❌ REJECT
+  - name: 🎓 Academic
+    type: select
+    proxies:
+      - 🏹 Native
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - ❌ REJECT
+  - name: 🌌 Y 🎥 N 🎼 S
+    type: select
+    proxies:
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - 🏹 Native
+      - ❌ REJECT
+  - name: 📺 Bilibili
+    type: select
+    proxies:
+      - 🏹 Native
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🚀 Handover Access
+      - 🎭 Cluster
+      - ❌ REJECT
+  - name: 🎑 Domestic Streaming Media
+    type: select
+    proxies:
+      - 🏹 Native
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🚀 Handover Access
+      - 🎭 Cluster
+      - ❌ REJECT
+  - name: 🎬 Intl. Streaming Media
+    type: select
+    proxies:
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - 🏹 Native
+      - ❌ REJECT
+  - name: 🏹 Native
+    type: select
+    proxies:
+      - DIRECT
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - ❌ REJECT
+  - name: 🎏 Recreation
+    type: select
+    proxies:
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - 🏹 Native
+      - ❌ REJECT
+  - name: ⚜️ Attempt
+    type: select
+    proxies:
+      - 🚀 Handover Access
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+      - 🎭 Cluster
+      - 🏹 Native
+      - ❌ REJECT
+  - name: ❌ REJECT
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+      - SELECT HK
+      - SELECT TW
+      - SELECT KR
+      - SELECT JP
+      - SELECT SG
+      - SELECT America
+      - SELECT Europe
+      - SELECT Others
+      - HTTP S
+  - name: 🎭 Cluster
+    type: url-test
+    use:
+      - AirPort
+      - Asia
+      - America
+      - Europe
+      - Others
+      - HTTPS-SCP
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: 🛰️ AirPort U
+    type: url-test
+    use:
+      - AirPort
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL HK
+    type: url-test
+    use:
+      - HK-🇭🇰
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL TW
+    type: url-test
+    use: 
+      - TW-🇹🇼
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL KR
+    type: url-test
+    use: 
+      - KR-🇰🇷
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL JP
+    type: url-test
+    use: 
+      - JP-🇯🇵
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL SG
+    type: url-test
+    use: 
+      - SG-🇸🇬
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL America
+    type: url-test
+    use: 
+      - America
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL Europe
+    type: url-test
+    use: 
+      - Europe
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: URL Others
+    type: url-test
+    use: 
+      - Others
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+  - name: HTTP U
+    type: url-test
+    use:
+      - HTTPS-SCP
+    url: http://cp.cloudflare.com/
+    interval: 300
+    tolerance: 50
+rule-providers:
+  Google:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Google.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    interval: 43200
+  GoogleDrive:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/GoogleDrive.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
+    interval: 43200
+  OneDrive:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/OneDrive.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+    interval: 43200
+  Microsoft:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Microsoft.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    interval: 43200
+  Github:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Github.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    interval: 43200
+  Game:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Game.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+    interval: 43200
+  YouTube:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/YouTube.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 43200
+  Netflix:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Netflix.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    interval: 43200
+  GlobalMedia:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/GlobalMedia.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    interval: 43200
+  Bilibili:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Bilibili.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    interval: 43200
+  ChinaMedia:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/ChinaMedia.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    interval: 43200
+  Developer:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Developer.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Developer/Developer.yaml
+    interval: 43200
+  Download:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Download.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+    interval: 43200
+  Lan:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Lan.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+    interval: 43200
+  AdBlock:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/AdBlock.yaml
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash-X@master/Filter/AdBlock.yaml
+    interval: 43200
+  Spotify:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Spotify.yaml
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash-X@master/Filter/Spotify.yaml
+    interval: 43200
+  Speedtest:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Speedtest.yaml
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash-X@master/Filter/Speedtest.yaml
+    interval: 43200
+  Steam:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/Steam.yaml
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash-X@master/Filter/Steam.yaml
+    interval: 43200
+  PayPal:
+    type: http
+    behavior: classical
+    path: ./Ruleset-Provider/PayPal.yaml
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash-X@master/Filter/PayPal.yaml
+    interval: 43200
+  reject:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/reject.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+    interval: 43200
+  icloud:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/icloud.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt
+    interval: 43200
+  apple:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/apple.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+    interval: 43200
+  applications:
+    type: http
+    behavior: classical
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt
+    path: ./Ruleset-Provider/applications.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/proxy.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
+    interval: 43200
+  direct:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/direct.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
+    interval: 43200
+  gfw:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/gfw.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
+    interval: 43200
+  greatfire:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/greatfire.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt
+    interval: 43200
+  tld-not-cn:
+    type: http
+    behavior: domain
+    path: ./Ruleset-Provider/tld-not-cn.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt
+    interval: 43200
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    path: ./Ruleset-Provider/telegramcidr.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt
+    interval: 43200
+  cncidr:
+    type: http
+    behavior: ipcidr
+    path: ./Ruleset-Provider/cncidr.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
+    interval: 43200
+rules:
+  - RULE-SET,applications,🏹 Native
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN-SUFFIX,acm.org,🎓 Academic
+  - DOMAIN-SUFFIX,acs.org,🎓 Academic
+  - DOMAIN-SUFFIX,aip.org,🎓 Academic
+  - DOMAIN-SUFFIX,ams.org,🎓 Academic
+  - DOMAIN-SUFFIX,annualreviews.org,🎓 Academic
+  - DOMAIN-SUFFIX,aps.org,🎓 Academic
+  - DOMAIN-SUFFIX,ascelibrary.org,🎓 Academic
+  - DOMAIN-SUFFIX,asm.org,🎓 Academic
+  - DOMAIN-SUFFIX,asme.org,🎓 Academic
+  - DOMAIN-SUFFIX,astm.org,🎓 Academic
+  - DOMAIN-SUFFIX,blackwell-synergy.com,🎓 Academic
+  - DOMAIN-SUFFIX,bmj.com,🎓 Academic
+  - DOMAIN-SUFFIX,cabdirect.org,🎓 Academic
+  - DOMAIN-SUFFIX,cambridge.org,🎓 Academic
+  - DOMAIN-SUFFIX,cas.org,🎓 Academic
+  - DOMAIN-SUFFIX,cell.com,🎓 Academic
+  - DOMAIN-SUFFIX,clarivate.com,🎓 Academic
+  - DOMAIN-SUFFIX,cnki.net,🎓 Academic
+  - DOMAIN-SUFFIX,cqvip.com,🎓 Academic
+  - DOMAIN-SUFFIX,csiro.au,🎓 Academic
+  - DOMAIN-SUFFIX,deepdyve.com,🎓 Academic
+  - DOMAIN-SUFFIX,ebscohost.com,🎓 Academic
+  - DOMAIN-SUFFIX,els-cdn.com,🎓 Academic
+  - DOMAIN-SUFFIX,elsevier.com,🎓 Academic
+  - DOMAIN-SUFFIX,emerald.com,🎓 Academic
+  - DOMAIN-SUFFIX,endnote.com,🎓 Academic
+  - DOMAIN-SUFFIX,engineeringvillage.com,🎓 Academic
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,🎓 Academic
+  - DOMAIN-SUFFIX,ieee.org,🎓 Academic
+  - DOMAIN-SUFFIX,imf.org,🎓 Academic
+  - DOMAIN-SUFFIX,iop.org,🎓 Academic
+  - DOMAIN-SUFFIX,jamanetwork.com,🎓 Academic
+  - DOMAIN-SUFFIX,jbc.org,🎓 Academic
+  - DOMAIN-SUFFIX,jhu.edu,🎓 Academic
+  - DOMAIN-SUFFIX,jstor.org,🎓 Academic
+  - DOMAIN-SUFFIX,karger.com,🎓 Academic
+  - DOMAIN-SUFFIX,libguides.com,🎓 Academic
+  - DOMAIN-SUFFIX,madsrevolution.net,🎓 Academic
+  - DOMAIN-SUFFIX,mdpi.com,🎓 Academic
+  - DOMAIN-SUFFIX,mpg.de,🎓 Academic
+  - DOMAIN-SUFFIX,myilibrary.com,🎓 Academic
+  - DOMAIN-SUFFIX,nature.com,🎓 Academic
+  - DOMAIN-SUFFIX,ncbi.nlm.nih.gov,🎓 Academic
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,🎓 Academic
+  - DOMAIN-SUFFIX,osapublishing.org,🎓 Academic
+  - DOMAIN-SUFFIX,oup.com,🎓 Academic
+  - DOMAIN-SUFFIX,ovid.com,🎓 Academic
+  - DOMAIN-SUFFIX,oxfordartonline.com,🎓 Academic
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,🎓 Academic
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,🎓 Academic
+  - DOMAIN-SUFFIX,pkulaw.com,🎓 Academic
+  - DOMAIN-SUFFIX,pnas.org,🎓 Academic
+  - DOMAIN-SUFFIX,proquest.com,🎓 Academic
+  - DOMAIN-SUFFIX,readcube.com,🎓 Academic
+  - DOMAIN-SUFFIX,researchgate.net,🎓 Academic
+  - DOMAIN-SUFFIX,rsc.org,🎓 Academic
+  - DOMAIN-SUFFIX,sagepub.com,🎓 Academic
+  - DOMAIN-SUFFIX,sci-hub.tw,🎓 Academic
+  - DOMAIN-SUFFIX,sciencedirect.com,🎓 Academic
+  - DOMAIN-SUFFIX,sciencemag.org,🎓 Academic
+  - DOMAIN-SUFFIX,scitation.org,🎓 Academic
+  - DOMAIN-SUFFIX,scopus.com,🎓 Academic
+  - DOMAIN-SUFFIX,siam.org,🎓 Academic
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,🎓 Academic
+  - DOMAIN-SUFFIX,springer.com,🎓 Academic
+  - DOMAIN-SUFFIX,springerlink.com,🎓 Academic
+  - DOMAIN-SUFFIX,tandfonline.com,🎓 Academic
+  - DOMAIN-SUFFIX,un.org,🎓 Academic
+  - DOMAIN-SUFFIX,uni-bielefeld.de,🎓 Academic
+  - DOMAIN-SUFFIX,wanfangdata.com,🎓 Academic
+  - DOMAIN-SUFFIX,webofknowledge.com,🎓 Academic
+  - DOMAIN-SUFFIX,westlaw.com,🎓 Academic
+  - DOMAIN-SUFFIX,westlawchina.com,🎓 Academic
+  - DOMAIN-SUFFIX,wiley.com,🎓 Academic
+  - DOMAIN-SUFFIX,worldbank.org,🎓 Academic
+  - DOMAIN-SUFFIX,worldscientific.com,🎓 Academic
+  - RULE-SET,AdBlock,❌ REJECT
+  - RULE-SET,reject,❌ REJECT
+  - DOMAIN-KEYWORD,firefox,🚀 Handover Access
+  - DOMAIN-SUFFIX,iq.com,🚀 Handover Access
+  - DOMAIN-SUFFIX,wetv.vip,🚀 Handover Access
+  - DOMAIN-SUFFIX,ip368.com,🚀 Handover Access
+  - DOMAIN-SUFFIX,ip138.com,🚀 Handover Access
+  - RULE-SET,Speedtest,🚀 Handover Access
+  - RULE-SET,Steam,🚀 Handover Access
+  - RULE-SET,Download,🚀 Handover Access
+  - RULE-SET,Github,🚀 Handover Access
+  - RULE-SET,Developer,🚀 Handover Access
+  - RULE-SET,PayPal,🚀 Handover Access
+  - RULE-SET,Google,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,GoogleDrive,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,icloud,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,apple,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,Microsoft,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,OneDrive,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,telegramcidr,🎋 T 🎊 G 🎐 M 🍎 A
+  - RULE-SET,tld-not-cn,🚀 Handover Access
+  - RULE-SET,Game,🎏 Recreation
+  - RULE-SET,YouTube,🌌 Y 🎥 N 🎼 S
+  - RULE-SET,Spotify,🌌 Y 🎥 N 🎼 S
+  - RULE-SET,Bilibili,📺 Bilibili
+  - RULE-SET,Netflix,🌌 Y 🎥 N 🎼 S
+  - RULE-SET,ChinaMedia,🎑 Domestic Streaming Media
+  - RULE-SET,GlobalMedia,🎬 Intl. Streaming Media
+  - RULE-SET,gfw,🚀 Handover Access
+  - RULE-SET,proxy,🚀 Handover Access
+  - RULE-SET,greatfire,🚀 Handover Access
+  - RULE-SET,Lan,🏹 Native
+  - RULE-SET,direct,🏹 Native
+  - RULE-SET,cncidr,🏹 Native
+  - GEOIP,CN,🏹 Native
+  - MATCH,⚜️ Attempt
