@@ -123,7 +123,7 @@
 </details>
 
 ### 所有节点
-合并节点总数: `782`
+合并节点总数: `983`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
@@ -134,7 +134,7 @@
 - [ThekingMX1998/free-v2ray-code](https://github.com/ThekingMX1998/free-v2ray-code), 节点数量: `43`
 - [TG节点池(https://t.me/Jsnzk/4664)](https://pool.jinxnet.xyz), 节点数量: `51`
 - [【碧海】节点池](https://proxies.bihai.cf/clash), 节点数量: `308`
-- [【426】节点池](https://zua426.cf/clash), 节点数量: `0`
+- [【426】节点池](https://zua426.cf/clash), 节点数量: `201`
 - [【EdNovas】节点池](https://ednovas.design/clash), 节点数量: `27`
 
 ## 客户端选择
