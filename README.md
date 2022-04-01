@@ -1,10 +1,10 @@
 # 修改自alanbobs999/TopFreeProxies
-# TopFreeProxies
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JehuWan/proxies/sub_merge?label=sub_merge)](https://github.com/JehuWan/Proxies/actions/workflows/sub_merge.yml) 
+# Proxies
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JehuWan/Proxies/sub_merge?label=sub_merge)](https://github.com/JehuWan/Proxies/actions/workflows/sub_merge.yml) 
 
-![Watchers](https://img.shields.io/github/watchers/JehuWan/proxies) ![Stars](https://img.shields.io/github/stars/JehuWan/proxies) ![Forks](https://img.shields.io/github/forks/JehuWan/proxies) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=JehuWan.proxies)
+![Watchers](https://img.shields.io/github/watchers/JehuWan/Proxies) ![Stars](https://img.shields.io/github/stars/JehuWan/Proxies) ![Forks](https://img.shields.io/github/forks/JehuWan/Proxies) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=JehuWan.Proxies)
 
-[仓库介绍](https://github.com/JehuWan/TopFreeProxies#仓库介绍) | [使用方法](https://github.com/JehuWan/TopFreeProxies#使用方法) | [节点信息](https://github.com/JehuWan/TopFreeProxies#节点信息) | [软件推荐](https://github.com/JehuWan/TopFreeProxies#客户端选择) | [仓库声明](https://github.com/JehuWan/TopFreeProxies#仓库声明)
+[仓库介绍](https://github.com/JehuWan/Proxies#仓库介绍) | [使用方法](https://github.com/JehuWan/Proxies#使用方法) | [节点信息](https://github.com/JehuWan/Proxies#节点信息) | [软件推荐](https://github.com/JehuWan/Proxies#客户端选择) | [仓库声明](https://github.com/JehuWan/Proxies#仓库声明)
 
 ## 仓库介绍
 对网络上各免费节点池及博主分享的节点进行测速筛选出较为稳定高速的节点，再导入到仓库中进行分享记录。所筛选的节点链接在仓库`./sub/sub_list.json`文件中，其中大部分为其他`GitHub`仓库链接，如果大家有好的订阅链接欢迎提交 PR ，这些链接包含的所有节点合并在仓库`./sub/sub_merge.txt`中。
@@ -16,13 +16,13 @@
 ## 使用方法
 将以下订阅链接导入相应客户端即可。链接中大部分为 SS 协议节点，少量 Vmess, Trojan ,SSR 协议节点，建议选择协议支持完整的客户端。
 
-- [多协议Base64编码](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/Eternity)
-- [Clash](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/Eternity.yml)
+- [多协议Base64编码](https://raw.githubusercontent.com/JehuWan/Proxies/master/Eternity)
+- [Clash](https://raw.githubusercontent.com/JehuWan/Proxies/master/Eternity.yml)
 
 另有国内加速链接：
 
-- [多协议Base64编码](https://raw.fastgit.org/JehuWan/TopFreeProxies/master/Eternity)
-- [Clash](https://raw.fastgit.org/JehuWan/TopFreeProxies/master/Eternity.yml)
+- [多协议Base64编码](https://raw.fastgit.org/JehuWan/Proxies/master/Eternity)
+- [Clash](https://raw.fastgit.org/JehuWan/Proxies/master/Eternity.yml)
 
 >`Clash`链接所使用的配置在仓库`./update/provider/`中，有相应配置文件和以国家分类的`proxy-provider`。
 >
