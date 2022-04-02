@@ -123,17 +123,16 @@
 </details>
 
 ### 所有节点
-合并节点总数: `7790`
+合并节点总数: `4432`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `978`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `970`
 - [ronghuaxueleng/cfmen](https://github.com/ronghuaxueleng/get_v2), 节点数量: `15`
 - [ThekingMX1998/free-v2ray-code](https://github.com/ThekingMX1998/free-v2ray-code), 节点数量: `28`
-- [【426】节点池](https://zua426.cf/clash), 节点数量: `0`
-- [【碧海】节点池](https://proxies.bihai.cf/clash), 节点数量: `4637`
-- [【EdNovas】节点池](https://ednovas.design/clash), 节点数量: `169`
-- [【Jsnzk】节点池](https://pool.jinxnet.xyz/clash), 节点数量: `1961`
+- [【碧海】节点池](https://proxies.bihai.cf/clash), 节点数量: `2007`
+- [【EdNovas】节点池](https://ednovas.design/clash), 节点数量: `91`
+- [【Jsnzk】节点池](https://pool.jinxnet.xyz/clash), 节点数量: `1319`
 - [git-yusteven/openit](https://github.com/git-yusteven/openit), 节点数量: `3`
 
 ## 客户端选择
