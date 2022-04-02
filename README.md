@@ -123,14 +123,14 @@
 </details>
 
 ### 所有节点
-合并节点总数: `6657`
+合并节点总数: `1905`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `1872`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `1857`
 - [ronghuaxueleng/cfmen](https://github.com/ronghuaxueleng/get_v2), 节点数量: `15`
 - [ThekingMX1998/free-v2ray-code](https://github.com/ThekingMX1998/free-v2ray-code), 节点数量: `28`
-- [【426|碧海|EdNovas|Jsnzk】节点池](https://zua426.cf/clash), 节点数量: `4742`
+- [【426|碧海|EdNovas|Jsnzk|openit】节点池](https://zua426.cf/clash), 节点数量: `6`
 
 ## 客户端选择
 ### 主流桌面客户端
