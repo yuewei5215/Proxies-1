@@ -110,60 +110,11 @@ tun:
   auto-route: true 
   auto-detect-interface: true 
 proxy-providers:
-  AirPort:
+  All:
     type: http
-    path: ./Proxy-Provider-Max/AirPort.yaml
-    url: https://gitlab.com/api/v4/projects/33820890/repository/files/Clash%2FAirPort.yaml/raw?ref=main&private_token=glpat-G54_jEXz6TYwUZzyBezs
-    interval: 3600
-    health-check:
-        enable: true
-        url: http://cp.cloudflare.com/
-        interval: 300
-  HK-🇭🇰:
-    type: http
-    path: ./Proxy-Provider-Max/HK-🇭🇰.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-    filter: (HK|🇭🇰)
-    interval: 3600
-    health-check:
-        enable: true
-        url: http://cp.cloudflare.com/
-        interval: 300
-  TW-🇹🇼:
-    type: http
-    path: ./Proxy-Provider-Max/TW-🇹🇼.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-    filter: (TW|🇹🇼)
-    interval: 3600
-    health-check:
-        enable: true
-        url: http://cp.cloudflare.com/
-        interval: 300
-  KR-🇰🇷:
-    type: http
-    path: ./Proxy-Provider-Max/KR-🇰🇷.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-    filter: (KR|🇰🇷)
-    interval: 3600
-    health-check:
-        enable: true
-        url: http://cp.cloudflare.com/
-        interval: 300
-  SG-🇸🇬:
-    type: http
-    path: ./Proxy-Provider-Max/SG-🇸🇬.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-    filter: (SG|🇸🇬)
-    interval: 3600
-    health-check:
-        enable: true
-        url: http://cp.cloudflare.com/
-        interval: 300
-  JP-🇯🇵:
-    type: http
-    path: ./Proxy-Provider-Max/JP-🇯🇵.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-    filter: (JP|🇯🇵)
+    path: ./Proxy-Provider-Max/All.yaml
+    url: https://www.con8.tk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2Fskullssr%2Fmerlinclash_clash_related%2Fmaster%2FUser_config_old%2Fnormal.ini&append_type=true&emoji=true&list=true&udp=true&tfo=false&scv=true&fdn=true&sort=true&expand=true&surge.doh=true&clash.doh=true&new_name=true
+#    filter: ()
     interval: 3600
     health-check:
         enable: true
@@ -179,46 +130,50 @@ proxy-providers:
         enable: true
         url: http://cp.cloudflare.com/
         interval: 300
-  Asia:
+  AirPort:
     type: http
-    path: ./Proxy-Provider-Max/Asia.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=HK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-#    filter: (HK+🇭🇰+TW+🇹🇼+KR+🇰🇷+JP+🇯🇵+SG+🇸🇬+CN+🇨🇳+IN+🇮🇳+ID+🇮🇩+🇹🇭+TH+RU+🇷🇺+🇻🇳+VN)
+    path: ./Proxy-Provider-Max/AirPort.yaml
+    url: https://gitlab.com/api/v4/projects/33820890/repository/files/Clash%2FAirPort.yaml/raw?ref=main&private_token=glpat-G54_jEXz6TYwUZzyBezs
     interval: 3600
     health-check:
         enable: true
         url: http://cp.cloudflare.com/
         interval: 300
-  America:
+  Sophists-HK:
     type: http
-    path: ./Proxy-Provider-Max/America.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=US%2B%F0%9F%87%BA%F0%9F%87%B8%2BCA%2B%F0%9F%87%A8%F0%9F%87%A6&udp=1&emoji=1&sort=0&aead=0&inline=1
-#    filter: (US+🇺🇸+CA+🇨🇦)
+    path: ./Proxy-Provider-Max/Sophists-HK.yaml
+    url: https://www.con8.tk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2Fskullssr%2Fmerlinclash_clash_related%2Fmaster%2FUser_config_old%2Fnormal.ini&include=HK%7C%F0%9F%87%AD%F0%9F%87%B0%7CTW%7C%F0%9F%87%B9%F0%9F%87%BC%7CKR%7C%F0%9F%87%B0%F0%9F%87%B7%7CJP%7C%F0%9F%87%AF%F0%9F%87%B5%7CSG%7C%F0%9F%87%B8%F0%9F%87%AC%7CCN%7C%F0%9F%87%A8%F0%9F%87%B3%7CIN%7C%F0%9F%87%AE%F0%9F%87%B3%7CID%7C%F0%9F%87%AE%F0%9F%87%A9%7C%F0%9F%87%B9%F0%9F%87%AD%7CTH%7CRU%7C%F0%9F%87%B7%F0%9F%87%BA%7C%F0%9F%87%BB%F0%9F%87%B3%7CVN&append_type=true&emoji=true&list=true&udp=true&tfo=false&scv=true&fdn=true&sort=true&expand=true&surge.doh=true&clash.doh=true&new_name=true
+    filter: (HK|🇭🇰)
     interval: 3600
     health-check:
         enable: true
         url: http://cp.cloudflare.com/
         interval: 300
-  Europe:
+  Traitor-TW+KR+JP+SG:
     type: http
-    path: ./Proxy-Provider-Max/Europe.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&in=%F0%9F%87%A6%F0%9F%87%B6%2BAQ%2BGB%2B%F0%9F%87%AC%F0%9F%87%A7%2BDE%2B%F0%9F%87%A9%F0%9F%87%AA%2BFR%2B%F0%9F%87%AB%F0%9F%87%B7%2BEE%2B%F0%9F%87%AA%F0%9F%87%AA%2BNL%2B%F0%9F%87%B3%F0%9F%87%B1%2B%F0%9F%87%B7%F0%9F%87%B4%2BRO%2B%F0%9F%87%AB%F0%9F%87%AE%2BFI%2B%F0%9F%87%AE%F0%9F%87%AA%2BIE%2BIT%2B%F0%9F%87%AE%F0%9F%87%B9&udp=1&emoji=1&sort=0&aead=0&inline=1
-#    filter: (🇦🇶+AQ+GB+🇬🇧+DE+🇩🇪+FR+🇫🇷+EE+🇪🇪+NL+🇳🇱+🇷🇴+RO+🇫🇮+FI+🇮🇪+IE+IT+🇮🇹)
+    path: ./Proxy-Provider-Max/Traitor-TW+KR+JP+SG.yaml
+    url: https://www.con8.tk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2Fskullssr%2Fmerlinclash_clash_related%2Fmaster%2FUser_config_old%2Fnormal.ini&include=HK%7C%F0%9F%87%AD%F0%9F%87%B0%7CTW%7C%F0%9F%87%B9%F0%9F%87%BC%7CKR%7C%F0%9F%87%B0%F0%9F%87%B7%7CJP%7C%F0%9F%87%AF%F0%9F%87%B5%7CSG%7C%F0%9F%87%B8%F0%9F%87%AC%7CCN%7C%F0%9F%87%A8%F0%9F%87%B3%7CIN%7C%F0%9F%87%AE%F0%9F%87%B3%7CID%7C%F0%9F%87%AE%F0%9F%87%A9%7C%F0%9F%87%B9%F0%9F%87%AD%7CTH%7CRU%7C%F0%9F%87%B7%F0%9F%87%BA%7C%F0%9F%87%BB%F0%9F%87%B3%7CVN&append_type=true&emoji=true&list=true&udp=true&tfo=false&scv=true&fdn=true&sort=true&expand=true&surge.doh=true&clash.doh=true&new_name=true
+    filter: (TW|🇹🇼|KR|🇰🇷|JP|🇯🇵|SG|🇸🇬)
     interval: 3600
     health-check:
         enable: true
         url: http://cp.cloudflare.com/
         interval: 300
-  Others:
+  Opponent-US+CA+AU:
     type: http
-    path: ./Proxy-Provider-Max/Others.yaml
-    url: https://dove.589669.xyz/all2clash?&sub=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&out=%F0%9F%87%A6%F0%9F%87%B6%2BAQ%2BGB%2B%F0%9F%87%AC%F0%9F%87%A7%2BDE%2B%F0%9F%87%A9%F0%9F%87%AA%2BFR%2B%F0%9F%87%AB%F0%9F%87%B7%2BEE%2B%F0%9F%87%AA%F0%9F%87%AA%2BNL%2B%F0%9F%87%B3%F0%9F%87%B1%2B%F0%9F%87%B7%F0%9F%87%B4%2BRO%2B%F0%9F%87%AB%F0%9F%87%AE%2BFI%2B%F0%9F%87%AE%F0%9F%87%AA%2BIE%2BIT%2B%F0%9F%87%AE%F0%9F%87%B9%2BUS%2B%F0%9F%87%BA%F0%9F%87%B8%2BCA%2B%F0%9F%87%A8%F0%9F%87%A6%2BHK%2B%F0%9F%87%AD%F0%9F%87%B0%2BTW%2B%F0%9F%87%B9%F0%9F%87%BC%2BKR%2B%F0%9F%87%B0%F0%9F%87%B7%2BJP%2B%F0%9F%87%AF%F0%9F%87%B5%2BSG%2B%F0%9F%87%B8%F0%9F%87%AC%2BCN%2B%F0%9F%87%A8%F0%9F%87%B3%2BIN%2B%F0%9F%87%AE%F0%9F%87%B3%2BID%2B%F0%9F%87%AE%F0%9F%87%A9%2B%F0%9F%87%B9%F0%9F%87%AD%2BTH%2BRU%2B%F0%9F%87%B7%F0%9F%87%BA%2B%F0%9F%87%BB%F0%9F%87%B3%2BVN&udp=1&emoji=1&sort=0&aead=0&inline=1
-#    filter: !(🇦🇶+AQ+GB+🇬🇧+DE+🇩🇪+FR+🇫🇷+EE+🇪🇪+NL+🇳🇱+🇷🇴+RO+🇫🇮+FI+🇮🇪+IE+IT+🇮🇹+US+🇺🇸+CA+🇨🇦+HK+🇭🇰+TW+🇹🇼+KR+🇰🇷+JP+🇯🇵+SG+🇸🇬+CN+🇨🇳+IN+🇮🇳+ID+🇮🇩+🇹🇭+TH+RU+🇷🇺+🇻🇳+VN)
+    path: ./Proxy-Provider-Max/Opponent-US+CA+AU.yaml
+    url: https://www.con8.tk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2Fskullssr%2Fmerlinclash_clash_related%2Fmaster%2FUser_config_old%2Fnormal.ini&append_type=true&emoji=true&list=true&udp=true&tfo=false&scv=true&fdn=true&sort=true&expand=true&surge.doh=true&clash.doh=true&new_name=true
+    filter: (US|🇺🇸|CA|🇨🇦|AU|🇦🇺)
     interval: 3600
     health-check:
         enable: true
         url: http://cp.cloudflare.com/
         interval: 300
+  Cimex-Europe:
+    type: http
+    path: ./Proxy-Provider-Max/Cimex-Europe.yaml
+    url: https://www.con8.tk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJehuWan%2FProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2Fskullssr%2Fmerlinclash_clash_related%2Fmaster%2FUser_config_old%2Fnormal.ini&include=%F0%9F%87%A6%F0%9F%87%B6%7CAQ%7CGB%7C%F0%9F%87%AC%F0%9F%87%A7%7CDE%7C%F0%9F%87%A9%F0%9F%87%AA%7CFR%7C%F0%9F%87%AB%F0%9F%87%B7%7CEE%7C%F0%9F%87%AA%F0%9F%87%AA%7CNL%7C%F0%9F%87%B3%F0%9F%87%B1%7C%F0%9F%87%B7%F0%9F%87%B4%7CRO%7C%F0%9F%87%AB%F0%9F%87%AE%7CFI%7C%F0%9F%87%AE%F0%9F%87%AA%7CIE%7CIT%7C%F0%9F%87%AE%F0%9F%87%B9&append_type=true&emoji=true&list=true&udp=true&tfo=false&scv=true&fdn=true&sort=true&expand=true&surge.doh=true&clash.doh=true&new_name=true
+    filter: (🇦🇶|AQ|GB|🇬🇧|DE|🇩🇪|FR|🇫🇷|EE|🇪🇪|NL|🇳🇱|🇷🇴|RO|🇫🇮|FI|🇮🇪|IE|IT|🇮🇹)
 proxy-groups:
   - name: 🚀 Handover Access
     type: select
@@ -226,25 +181,17 @@ proxy-groups:
       - 🏹 Native
       - 🎭 Cluster
       - 🛰️ AirPort S
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🛰️ AirPort U
-      - URL HK
-      - URL TW
-      - URL KR
-      - URL JP
-      - URL SG
-      - URL America
-      - URL Europe
-      - URL Others
-      - HTTP U
+      - 🪐 Sophists-HK U
+      - 📯 Traitor-TW+KR+JP+SG U
+      - 🔬 Opponeant-US+CA+AU U
+      - 🍨 Cimex-Europe U
+      - 🍱 HTTP U
       - ❌ REJECT
   - name: 🛰️ AirPort S
     type: select
@@ -253,63 +200,35 @@ proxy-groups:
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: SELECT HK
+  - name: 🪐 Sophists-HK S
     type: select
     use:
-      - HK-🇭🇰
+      - Sophists-HK
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: SELECT TW
+  - name: 📯 Traitor-TW+KR+JP+SG S
     type: select
     use: 
-      - TW-🇹🇼
+      - Traitor-TW+KR+JP+SG
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: SELECT KR
+  - name: 🔬 Opponeant-US+CA+AU S
     type: select
     use: 
-      - KR-🇰🇷
+      - Opponent-US+CA+AU
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: SELECT JP
+  - name: 🍨 Cimex-Europe S
     type: select
     use: 
-      - JP-🇯🇵
+      - Cimex-Europe
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: SELECT SG
-    type: select
-    use: 
-      - SG-🇸🇬
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: SELECT America
-    type: select
-    use: 
-      - America
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: SELECT Europe
-    type: select
-    use: 
-      - Europe
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: SELECT Others
-    type: select
-    use: 
-      - Others
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: HTTP S
+  - name: 🍱 HTTP S
     type: select
     use:
       - HTTPS-SCP
@@ -320,15 +239,11 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - 🏹 Native
       - ❌ REJECT
@@ -337,30 +252,22 @@ proxy-groups:
     proxies:
       - 🏹 Native
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - ❌ REJECT
   - name: 🌌 Y 🎥 N 🎼 S
     type: select
     proxies:
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - 🏹 Native
       - ❌ REJECT
@@ -368,15 +275,11 @@ proxy-groups:
     type: select
     proxies:
       - 🏹 Native
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🚀 Handover Access
       - 🎭 Cluster
       - ❌ REJECT
@@ -384,15 +287,11 @@ proxy-groups:
     type: select
     proxies:
       - 🏹 Native
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🚀 Handover Access
       - 🎭 Cluster
       - ❌ REJECT
@@ -400,15 +299,11 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - 🏹 Native
       - ❌ REJECT
@@ -416,30 +311,22 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - ❌ REJECT
   - name: 🎏 Recreation
     type: select
     proxies:
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - 🏹 Native
       - ❌ REJECT
@@ -447,15 +334,11 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 Handover Access
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
       - 🎭 Cluster
       - 🏹 Native
       - ❌ REJECT
@@ -464,23 +347,16 @@ proxy-groups:
     proxies:
       - DIRECT
       - REJECT
-      - SELECT HK
-      - SELECT TW
-      - SELECT KR
-      - SELECT JP
-      - SELECT SG
-      - SELECT America
-      - SELECT Europe
-      - SELECT Others
-      - HTTP S
+      - 🪐 Sophists-HK S
+      - 📯 Traitor-TW+KR+JP+SG S
+      - 🔬 Opponeant-US+CA+AU S
+      - 🍨 Cimex-Europe S
+      - 🍱 HTTP S
   - name: 🎭 Cluster
     type: url-test
     use:
       - AirPort
-      - Asia
-      - America
-      - Europe
-      - Others
+      - All
       - HTTPS-SCP
     url: http://cp.cloudflare.com/
     interval: 300
@@ -492,63 +368,35 @@ proxy-groups:
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: URL HK
+  - name: 🪐 Sophists-HK U
     type: url-test
     use:
-      - HK-🇭🇰
+      - Sophists-HK
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: URL TW
+  - name: 📯 Traitor-TW+KR+JP+SG U
     type: url-test
     use: 
-      - TW-🇹🇼
+      - Traitor-TW+KR+JP+SG
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: URL KR
+  - name: 🔬 Opponeant-US+CA+AU U
     type: url-test
     use: 
-      - KR-🇰🇷
+      - Opponent-US+CA+AU
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: URL JP
+  - name: 🍨 Cimex-Europe U
     type: url-test
     use: 
-      - JP-🇯🇵
+      - Cimex-Europe
     url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
-  - name: URL SG
-    type: url-test
-    use: 
-      - SG-🇸🇬
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: URL America
-    type: url-test
-    use: 
-      - America
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: URL Europe
-    type: url-test
-    use: 
-      - Europe
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: URL Others
-    type: url-test
-    use: 
-      - Others
-    url: http://cp.cloudflare.com/
-    interval: 300
-    tolerance: 50
-  - name: HTTP U
+  - name: 🍱 HTTP U
     type: url-test
     use:
       - HTTPS-SCP
