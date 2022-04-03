@@ -136,7 +136,6 @@
 - [ldir92664/Vmess-Actions](https://github.com/ldir92664/Vmess-Actions), 节点数量: `1`
 - [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `1`
 - [Jsnzkpg/Jsnzkpg](https://github.com/Jsnzkpg/Jsnzkpg), 节点数量: `1`
-- [openit/changfengoss|combine](https://github.com/git-yusteven/openit), 节点数量: `1`
 
 ## 客户端选择
 ### 主流桌面客户端
