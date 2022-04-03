@@ -123,7 +123,7 @@
 </details>
 
 ### 所有节点
-合并节点总数: `663`
+合并节点总数: `668`
 [节点链接](https://raw.githubusercontent.com/JehuWan/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
