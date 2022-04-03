@@ -123,11 +123,11 @@
 </details>
 
 ### 所有节点
-合并节点总数: `3149`
+合并节点总数: `3211`
 [节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `3`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `65`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `103`
 - [alanbobs999/TopFreeProxies/main/Eternity](https://github.com/alanbobs999/TopFreeProxies/Eternity), 节点数量: `51`
 - [ThekingMX1998/free-v2ray-code](https://github.com/alanbobs999/TopFreeProxies/Eternity), 节点数量: `2437`
