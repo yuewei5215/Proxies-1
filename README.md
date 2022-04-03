@@ -1,3 +1,4 @@
+# 禁止fork！拒绝伸手党！请参考代码！
 # 修改自alanbobs999/TopFreeProxies
 # Proxies
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JehuWan/Proxies/sub_merge?label=sub_merge)](https://github.com/JehuWan/Proxies/actions/workflows/sub_merge.yml) 
