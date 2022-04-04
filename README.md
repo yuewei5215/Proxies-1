@@ -124,17 +124,16 @@
 </details>
 
 ### 所有节点
-合并节点总数: `1649`
+合并节点总数: `505`
 [节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `114`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `122`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `32`
 - [GreenFishStudio/GreenFish/](https://github.com/GreenFishStudio/GreenFish/), 节点数量: `46`
 - [git-yusteven/openit/combine](https://github.com/git-yusteven/openit), 节点数量: `38`
-- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `189`
-- [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `92`
-- [Temp](https://github.com), 节点数量: `1138`
+- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `173`
+- [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `94`
 
 ## 客户端选择
 ### 主流桌面客户端
