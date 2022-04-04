@@ -125,7 +125,7 @@
 
 ### 所有节点
 合并节点总数: `505`
-[节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge.txt)
+[节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge_yaml.yml)
 
 ### 节点来源
 - [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `122`
