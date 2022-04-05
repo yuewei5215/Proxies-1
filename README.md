@@ -124,11 +124,11 @@
 </details>
 
 ### 所有节点
-合并节点总数: `646`
+合并节点总数: `638`
 [节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge_yaml.yml)
 
 ### 节点来源
-- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `281`
+- [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `273`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `25`
 - [GreenFishStudio/GreenFish/](https://github.com/GreenFishStudio/GreenFish/), 节点数量: `77`
 - [git-yusteven/openit/combine](https://github.com/git-yusteven/openit), 节点数量: `0`
