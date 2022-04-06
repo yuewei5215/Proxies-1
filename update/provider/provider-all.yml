@@ -2,15 +2,15 @@ proxies:
 - {name: "🇹🇼,TW,[165.154.226.221],00", server: 0322tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /nl, tls: true, ws-headers: {Host: 0322tw.fans8.xyz}}
 - {name: "🇭🇰,HK,[104.208.90.214],01", server: sg04.xiaocloud.icu, port: 20467, type: vmess, uuid: 64749822-654a-3050-9aac-ba94af918f47, alterId: 2, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: sg04.xiaocloud.icu}}
 - {name: "🇭🇰,HK,[104.208.73.3],02", server: sg02.xiaocloud.icu, port: 20265, type: vmess, uuid: 64749822-654a-3050-9aac-ba94af918f47, alterId: 2, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: sg02.xiaocloud.icu}}
-- {name: "🇨🇳,CN,[183.240.69.52],03", server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: b34e13ec-3517-4216-be4a-1f2c28f8375c, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[120.233.128.132],03", server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: b34e13ec-3517-4216-be4a-1f2c28f8375c, skip-cert-verify: true}
 - {name: "🇯🇵,JP,[138.2.41.154],04", server: 8.wwwkkk.xyz, port: 443, type: vmess, uuid: cee6bef2-e7d9-43b4-96db-50b891ba30a1, alterId: 0, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /helloman, tls: true, ws-headers: {Host: 8.wwwkkk.xyz}}
 - {name: "🇺🇸,US,[185.148.14.58],05", server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true}
 - {name: "🇭🇰,HK,[52.184.50.35],06", server: hk2.quoctai.xyz, port: 80, type: vmess, uuid: caf12d12-e017-44fe-b741-f8727e2fecd9, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /quoctai, tls: false, ws-headers: {Host: Livestream2.tv360.vn}}
 - {name: "🇭🇰,HK,[203.175.12.159],07", server: tj-hk07.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true}
 - {name: "🇯🇵,JP,[20.89.54.45],08", server: eimi.quoctai.xyz, port: 80, type: vmess, uuid: caf12d12-e017-44fe-b741-f8727e2fecd9, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /quoctai, tls: false, ws-headers: {Host: Livestream2.tv360.vn}}
-- {name: "🇦🇶,FR,[15.188.144.106],09", server: fr-9.tjjjt.top, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true}
+- {name: "🇦🇶,FR,[13.37.224.57],09", server: fr-9.tjjjt.top, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true}
 - {name: "🇨🇳,CN,[183.240.132.27],10", server: 183.240.132.27, port: 21209, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: 183.240.132.27}}
-- {name: "🇦🇶,FR,[35.181.7.117],11", server: fr-6.tjjjt.top, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true}
+- {name: "🇦🇶,FR,[13.36.176.111],11", server: fr-6.tjjjt.top, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true}
 - {name: "🇺🇸,US,[167.88.63.108],12", server: 167.88.63.108, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
 - {name: "🇺🇸,US,[38.114.114.69],13", server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
 - {name: "🇺🇸,US,[167.88.63.108],14", server: 167.88.63.108, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
@@ -28,7 +28,7 @@ proxies:
 - {name: "🇺🇸,US,[38.114.114.69],26", server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
 - {name: "🇨🇳,CN,[116.162.14.228],27", server: 116.162.14.228, port: 61765, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 116.162.14.228}}
 - {name: "🇺🇸,US,[167.88.63.108],28", server: 167.88.63.108, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-- {name: "🇨🇳,CN,[116.162.14.184],29", server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.188.29.184],29", server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, skip-cert-verify: true}
 - {name: "🇺🇸,US,[167.88.63.108],30", server: 167.88.63.108, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 - {name: "🇦🇺,AU,[172.105.190.20],31", server: 172.105.190.20, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
 - {name: "🇺🇸,US,[38.114.114.69],32", server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
