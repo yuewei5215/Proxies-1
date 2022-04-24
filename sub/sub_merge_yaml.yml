@@ -13,14 +13,14 @@ proxies:
 - {name: "🇨🇦,CA,[134.195.196.68],011", server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
 - {name: "🏁,RELAY,[104.21.0.103],012", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v5.ssrsub.com}}
 - {name: "🇹🇼,TW,[61.222.202.189],013", server: 61.222.202.189, port: 443, type: vmess, uuid: fba066f6-fb03-3a00-9232-50a51ec202d8, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: 61.222.202.189}}
-- {name: "🇺🇸,US,[172.64.194.7],014", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
+- {name: "🇺🇸,US,[172.64.195.7],014", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
 - {name: "🇺🇸,US,[172.64.164.28],015", server: 8.ezydfdd.com, port: 443, type: vmess, uuid: dc0887b9-4c05-428c-adce-4235d1636341, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /qwe, tls: true, ws-headers: {Host: 8.ezydfdd.com}}
 - {name: "🏁,RELAY,[104.21.0.103],016", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v1.ssrsub.com}}
 - {name: "🇨🇦,CA,[134.195.196.68],017", server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
 - {name: "🇨🇦,CA,[134.195.196.68],018", server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],019", server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
 - {name: "🇨🇦,CA,[134.195.196.68],020", server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-- {name: "🇺🇸,US,[172.67.162.40],021", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
+- {name: "🏁,RELAY,[104.21.15.101],021", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
 - {name: "🇨🇦,CA,[134.195.196.68],022", server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 - {name: "🇨🇦,CA,[134.195.196.68],023", server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],024", server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
@@ -45,14 +45,14 @@ proxies:
 - {name: "🇨🇦,CA,[134.195.196.68],043", server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
 - {name: "🇺🇸,US,[172.67.150.223],044", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v5.ssrsub.com}}
 - {name: "🇹🇼,TW,[61.222.202.189],045", server: 61.222.202.189, port: 443, type: vmess, uuid: fba066f6-fb03-3a00-9232-50a51ec202d8, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: 61.222.202.189}}
-- {name: "🇺🇸,US,[172.64.195.7],046", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
+- {name: "🇺🇸,US,[172.64.194.7],046", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
 - {name: "🇺🇸,US,[172.64.165.28],047", server: 8.ezydfdd.com, port: 443, type: vmess, uuid: dc0887b9-4c05-428c-adce-4235d1636341, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /qwe, tls: true, ws-headers: {Host: 8.ezydfdd.com}}
 - {name: "🇺🇸,US,[172.67.150.223],048", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v1.ssrsub.com}}
 - {name: "🇨🇦,CA,[134.195.196.68],049", server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
 - {name: "🇨🇦,CA,[134.195.196.68],050", server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],051", server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
 - {name: "🇨🇦,CA,[134.195.196.68],052", server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-- {name: "🏁,RELAY,[104.21.15.101],053", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
+- {name: "🇺🇸,US,[172.67.162.40],053", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
 - {name: "🇨🇦,CA,[134.195.196.68],054", server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 - {name: "🇨🇦,CA,[134.195.196.68],055", server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],056", server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
@@ -63,32 +63,32 @@ proxies:
 - {name: "🏁,RELAY,[104.21.0.103],061", server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v3.ssrsub.com}}
 - {name: "🏁,RELAY,[104.21.0.103],062", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v4.ssrsub.com}}
 - {name: "🏁,RELAY,[104.21.0.103],063", server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v2.ssrsub.com}}
-- {name: "🏁,RELAY,[104.21.85.129],064", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDN, sni: payday2.eu.org, skip-cert-verify: true}
-- {name: "🇺🇸,US,[172.67.205.187],065", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDM, sni: payday2.eu.org, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],066", server: dx-hk.vmess.top, port: 24796, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇺🇸,US,[172.67.205.187],064", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDN, sni: payday2.eu.org, skip-cert-verify: true}
+- {name: "🏁,RELAY,[104.21.85.129],065", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDM, sni: payday2.eu.org, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],066", server: dx-hk.vmess.top, port: 24796, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
 - {name: "🇦🇺,AU,[45.79.237.136],067", server: au-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: au-a.vmess.top, skip-cert-verify: true}
 - {name: "🇨🇦,CA,[134.195.196.68],068", server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-- {name: "🇨🇳,CN,[119.147.20.106],069", server: dx-hk.vmess.top, port: 24705, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],069", server: dx-hk.vmess.top, port: 24705, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
 - {name: "🇩🇪,DE,[139.162.168.99],070", server: de-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: de-a.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],071", server: dx-hk.vmess.top, port: 24712, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],071", server: dx-hk.vmess.top, port: 24712, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
 - {name: "🇬🇧,GB,[139.162.224.140],072", server: uk-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: uk-a.vmess.top, skip-cert-verify: true}
 - {name: "🇦🇶,NOWHERE,[0.0.0.0],073", server: hk-a.vmess.top, port: 24501, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: hk-a.vmess.top, skip-cert-verify: true}
 - {name: "🇦🇶,NOWHERE,[0.0.0.0],074", server: hk-a.vmess.top, port: 24503, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: hk-a.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],075", server: dx-hk.vmess.top, port: 24703, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],076", server: dx-hk.vmess.top, port: 24710, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],077", server: dx-hk.vmess.top, port: 24713, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],075", server: dx-hk.vmess.top, port: 24703, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],076", server: dx-hk.vmess.top, port: 24710, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],077", server: dx-hk.vmess.top, port: 24713, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
 - {name: "🇮🇳,IN,[172.105.43.177],078", server: in-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: in-a.vmess.top, skip-cert-verify: true}
 - {name: "🇯🇵,JP,[20.222.34.228],079", server: azjp.vmess.top, port: 24502, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: azjp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],080", server: lt-jp.vmess.top, port: 24702, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],081", server: lt-jp.vmess.top, port: 24707, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],082", server: lt-jp.vmess.top, port: 24708, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],083", server: lt-jp.vmess.top, port: 24709, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],084", server: dx-hk.vmess.top, port: 24704, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[119.147.20.106],085", server: dx-hk.vmess.top, port: 24711, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],080", server: lt-jp.vmess.top, port: 24702, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],081", server: lt-jp.vmess.top, port: 24707, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],082", server: lt-jp.vmess.top, port: 24708, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],083", server: lt-jp.vmess.top, port: 24709, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],084", server: dx-hk.vmess.top, port: 24704, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[119.147.20.160],085", server: dx-hk.vmess.top, port: 24711, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: dx-hk.vmess.top, skip-cert-verify: true}
 - {name: "🇸🇬,SG,[192.53.114.86],086", server: sg-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: sg-a.vmess.top, skip-cert-verify: true}
 - {name: "🇸🇬,SG,[192.53.113.133],087", server: sg-b.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: sg-b.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],088", server: lt-jp.vmess.top, port: 24701, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
-- {name: "🇨🇳,CN,[39.173.146.62],089", server: lt-jp.vmess.top, port: 24714, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],088", server: lt-jp.vmess.top, port: 24701, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
+- {name: "🇨🇳,CN,[101.71.112.232],089", server: lt-jp.vmess.top, port: 24714, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: lt-jp.vmess.top, skip-cert-verify: true}
 - {name: "🇯🇵,JP,[20.222.34.228],090", server: azjp.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: azjp.vmess.top, skip-cert-verify: true}
 - {name: "🇺🇸,US,[173.230.150.220],091", server: us-b.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: us-b.vmess.top, skip-cert-verify: true}
 - {name: "🇺🇸,US,[95.181.189.60],092", server: 95.181.189.60, port: 28629, type: vmess, uuid: 872808d3-c7de-4f61-a60e-8b2b0bd399d9, alterId: 64, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 95.181.189.60}}
@@ -137,7 +137,7 @@ proxies:
 - {name: "🇦🇺,AU,[45.79.237.136],135", server: au-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: au-a.vmess.top, skip-cert-verify: true}
 - {name: "🇰🇷,KR,[129.154.54.75],136", server: 129.154.54.75, port: 33004, type: vmess, uuid: 4f14695c-31b9-45bf-ca34-1d82170fc100, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 129.154.54.75}}
 - {name: "🇭🇰,HK,[43.155.91.131],137", server: 421hk.fans8.xyz, port: 443, type: vmess, uuid: 82a96743-115b-356d-90ae-2928f32d8958, alterId: 2, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ray, tls: true, ws-headers: {Host: 421hk.fans8.xyz}}
-- {name: "🇺🇸,US,[172.67.205.187],138", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDC, sni: payday2.eu.org, skip-cert-verify: true}
+- {name: "🏁,RELAY,[104.21.85.129],138", server: payday2.eu.org, port: 10086, type: trojan, password: WDNMDC, sni: payday2.eu.org, skip-cert-verify: true}
 - {name: "🇨🇦,CA,[134.195.196.68],139", server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
 - {name: "🇯🇵,JP,[20.222.34.228],140", server: azjp.vmess.top, port: 24502, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: azjp.vmess.top, skip-cert-verify: true}
 - {name: "🇸🇬,SG,[192.53.114.86],141", server: sg-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: sg-a.vmess.top, skip-cert-verify: true}
@@ -187,7 +187,7 @@ proxies:
 - {name: "🇨🇦,CA,[134.195.196.68],185", server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
 - {name: "🏁,RELAY,[104.21.0.103],186", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ssrsub, tls: true, ws-headers: {Host: v4.ssrsub.com}}
 - {name: "🇺🇸,US,[164.92.91.87],187", server: sanfranciscolafayette.club, port: 443, type: vmess, uuid: cc0b4469-c0e5-4efb-8f69-a6df64db24ee, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /neuromancer, tls: true, ws-headers: {Host: sanfranciscolafayette.club}}
-- {name: "🏁,RELAY,[104.16.124.96],188", server: www.cloudflare.com, port: 8443, type: trojan, password: b2015918-4a70-4250-8afa-dba8a5be97f4, sni: douyincdn.com, skip-cert-verify: true}
+- {name: "🏁,RELAY,[104.16.123.96],188", server: www.cloudflare.com, port: 8443, type: trojan, password: b2015918-4a70-4250-8afa-dba8a5be97f4, sni: douyincdn.com, skip-cert-verify: true}
 - {name: "🇸🇬,SG,[13.215.223.16],189", server: v2-2.godlight.xyz, port: 30523, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /54f634fs, tls: true, ws-headers: {Host: v2-2.godlight.xyz}}
 - {name: "🇰🇷,KR,[3.39.106.237],190", server: v2-5.godlight.xyz, port: 39783, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /71h4b3s1f53, tls: true, ws-headers: {Host: v2-5.godlight.xyz}}
 - {name: "🇺🇸,US,[74.211.102.69],191", server: 74.211.102.69, port: 2096, type: vmess, uuid: fba066f6-fb03-3a00-9232-50a51ec202d8, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: 74.211.102.69}}
@@ -196,12 +196,12 @@ proxies:
 - {name: "🇺🇸,US,[209.141.61.83],194", server: top.njiang.tk, port: 443, type: vmess, uuid: b2d062be-1912-4523-96c9-4f0f101c931b, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /wivhvws, tls: true, ws-headers: {Host: top.njiang.tk}}
 - {name: "🇺🇸,US,[172.64.147.206],195", server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: node.774.gs}}
 - {name: "🇨🇦,CA,[134.195.196.68],196", server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-- {name: "🇺🇸,US,[172.64.195.7],197", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
+- {name: "🇺🇸,US,[172.64.194.7],197", server: app.ssfree.ru, port: 443, type: vmess, uuid: 6ee654d6-c31e-11ec-b83f-000017022008, alterId: 64, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /getweather, tls: true, ws-headers: {Host: app.ssfree.ru}}
 - {name: "🇺🇸,US,[172.64.165.28],198", server: 8.ezydfdd.com, port: 443, type: vmess, uuid: dc0887b9-4c05-428c-adce-4235d1636341, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /qwe, tls: true, ws-headers: {Host: 8.ezydfdd.com}}
 - {name: "🇨🇦,CA,[134.195.196.68],199", server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
 - {name: "🇨🇦,CA,[134.195.196.68],200", server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],201", server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-- {name: "🏁,RELAY,[104.21.15.101],202", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
+- {name: "🇺🇸,US,[172.67.162.40],202", server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /happy, tls: true, ws-headers: {Host: v2ray.788644.xyz}}
 - {name: "🇨🇦,CA,[134.195.196.68],203", server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 - {name: "🇨🇦,CA,[134.195.196.68],204", server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 - {name: "🇨🇦,CA,[134.195.196.68],205", server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
@@ -212,7 +212,7 @@ proxies:
 - {name: "🇬🇧,GB,[45.61.173.125],210", server: uk-nf-route.teacher2040.com, port: 31224, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /Asq7j5Mb/, tls: false, ws-headers: {Host: uk-nf-route.teacher2040.com}}
 - {name: "🇮🇳,IN,[172.104.206.42],211", server: in-1-fast.teacher2060.com, port: 31221, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /Asq7j5Mb/, tls: false, ws-headers: {Host: in-1-fast.teacher2060.com}}
 - {name: "🇺🇸,US,[172.99.249.198],212", server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /Asq7j5Mb/, tls: false, ws-headers: {Host: streaming-1-route.teacher2050.com}}
-- {name: "🏁,RELAY,[104.21.51.214],213", server: fumetsuseiko.tk, port: 443, type: vmess, uuid: 3364a992-7e4a-4551-d488-e3fad37421ad, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: fumetsuseiko.tk}}
+- {name: "🇺🇸,US,[172.67.186.93],213", server: fumetsuseiko.tk, port: 443, type: vmess, uuid: 3364a992-7e4a-4551-d488-e3fad37421ad, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: fumetsuseiko.tk}}
 - {name: "🇬🇧,GB,[139.162.224.140],214", server: uk-a.vmess.top, port: 56656, type: trojan, password: 16987731-e606-40da-a4db-a41251b7b65b, sni: uk-a.vmess.top, skip-cert-verify: true}
 - {name: "🇰🇷,KR,[144.24.88.101],215", server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, skip-cert-vertify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: uk-a.vmess.top}}
 - {name: "🇬🇧,GB,[146.70.46.68],216", server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, skip-cert-vertify: true, network: ws, ws-path: /ws, tls: true, ws-headers: {Host: uk-manchester.eiw2eemo.com}}
