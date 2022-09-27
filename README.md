@@ -131,7 +131,7 @@
 - [MoonFree/Clash](https://hi.moon365.workers.dev/proxies), 节点数量: `0`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `100`
 - [GreenFishStudio/GreenFish/](https://github.com/GreenFishStudio/GreenFish/), 节点数量: `56`
-- [git-yusteven/openit/combine](https://github.com/git-yusteven/openit), 节点数量: `0`
+- [git-yusteven/openit/combine](https://github.com/git-yusteven/openit), 节点数量: `1`
 - [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `223`
 - [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `100`
 
