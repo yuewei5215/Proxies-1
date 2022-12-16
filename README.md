@@ -132,7 +132,7 @@
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `83`
 - [GreenFishStudio/GreenFish/](https://github.com/GreenFishStudio/GreenFish/), 节点数量: `56`
 - [git-yusteven/openit/combine](https://github.com/git-yusteven/openit), 节点数量: `0`
-- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `0`
+- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `127`
 - [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `100`
 
 ## 客户端选择
