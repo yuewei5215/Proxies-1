@@ -124,7 +124,7 @@
 </details>
 
 ### 所有节点
-合并节点总数: `1`
+合并节点总数: `0`
 [节点链接](https://raw.githubusercontent.com/JehuWan/Proxies/master/sub/sub_merge_yaml.yml)
 
 ### 节点来源
